@@ -1,0 +1,134 @@
+{
+  "default": {
+    "geoMapData": [
+      {
+        "geoCode": "KR-43",
+        "geoName": "Chungcheongbuk-do",
+        "value": [100],
+        "formattedValue": ["100"],
+        "maxValueIndex": 0,
+        "hasData": [true]
+      },
+      {
+        "geoCode": "KR-11",
+        "geoName": "Seoul",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-26",
+        "geoName": "Busan",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-27",
+        "geoName": "Daegu",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-28",
+        "geoName": "Incheon",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-29",
+        "geoName": "Gwangju",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-30",
+        "geoName": "Daejeon",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-31",
+        "geoName": "Ulsan",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-41",
+        "geoName": "Gyeonggi-do",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-42",
+        "geoName": "Gangwon-do",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-44",
+        "geoName": "Chungcheongnam-do",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-45",
+        "geoName": "Jeollabuk-do",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-46",
+        "geoName": "Jeollanam-do",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-47",
+        "geoName": "Gyeongsangbuk-do",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-48",
+        "geoName": "Gyeongsangnam-do",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      },
+      {
+        "geoCode": "KR-49",
+        "geoName": "Jeju-do",
+        "value": [0],
+        "formattedValue": [""],
+        "maxValueIndex": 0,
+        "hasData": [false]
+      }
+    ]
+  }
+}

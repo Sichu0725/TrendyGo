@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-signin-client_id"
+      content="YOUR_CLIENT_ID.apps.googleusercontent.com"
+    />
+    <link
+      rel="stylesheet"
+      href="https://supsok.github.io/gbsw/touchstrap/css/touchstrap.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://supsok.github.io/gbsw/touchstrap/js/touchstrap.js"></script>
+
+    <script
+      src="https://apis.google.com/js/platform.js?onload=renderButton"
+      async
+      defer
+    ></script>
+    <script src="../js/googleLogin.js"></script>
+    <script type="module" src="../js/index.js"></script>
+    <link rel="stylesheet" href="../style/global.css" />
+    <title>Trendy Go</title>
+  </head>
+  <body>
+    <section class="page center" id="page01">
+      <header
+        class="bar bar-nav bar-dark bg-faded bg-primary"
+        style="height: 10em; padding: 1em"
+      >
+        <div class="title" style="text-align: left; padding: 10px">
+          <h3>Trendy Go</h3>
+          <img
+            class="user-img"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAY1BMVEX///8AAADr6+tBQUG5ubnU1NQaGhro6Ojg4OCdnZ2YmJg8PDy8vLxvb2/5+fn8/PyLi4uSkpIzMzN7e3uvr6+np6ddXV3CwsLOzs4nJyciIiIJCQlnZ2cRERGBgYHz8/NPT0+6XZqLAAAD0UlEQVR4nO2aa5uyIBCG84hpqXlKrdT//yvfWgazVsWWEffda+6PSfAoMMyB3Y4gCIIgCIIgCIIgiD8NKw9ZnmeHkm2tRODFRXAxvrgERextrWe3M7PAeCPIzG012da7pAeWvaEkrxiT9KDYbBLP7pQmw3AP22jav6iog6B++WG/raZLciqZ2bYmK2OxD7dRlfeDH8vh7+Wxf5Dr1lT2BqCMXp9EZW8kyvH/roWZwLhN+/1hm8LDRK/BEsP6o0+jk5CsU5MHg8ZTDWJooNNcXWGJh1MNQmhx1afJ4fv+NrNk2I03cbSJihds+VwyweiAMRjZeE9aMAy6NDmLLDZYfF3zx4e7SXaWd9N62PCDJJE14/b1qEPRfbsXy0bjVqGYNBuoMGvZccv3n6XnqPH4vEhdXpvPsh6jDqLOsnbnDURJ/d2DTlEfrik98SnsPqlbkurcfb/STu24C+dK5oXxAOykR5PwzyWLCtwEbX66sWC1wMrT5iUID33WKHCDYKS6NIFZNIKZTxWCOyU1sWhEMDUzVqGBKY6mm2AjQtFsqoGIn7WGoxCsTJ3KNjzWGMzc8SoYdtSxFLmPSnOWSnwL4/rNhjLxGeXeDTYiMjfcmA1Wc8TiPpWmy5gPRhfphLusNIN58rL0md1rNO68XlVjPLm4lWVV7mXwk74w9IXX/OIb+w2+0xflaML6gaU5XzbEjMc1nbZN75tx8q4oiTeuONxhh5cUf2H/lqIRO/hNmjb+4RdUiwji7xO25iytptBYEHl5WnSdNUvXFWnuaVLW2um7DZ8jtde372bzrZAtI0jXleU1cg1jNCta+n0tH3+ceq3M9XRtfQnr1N/Pw89UBdcmt2fJm2tQDf5SrxDBD33fe6CwyNmN7oHE4G/oNWX/+ZH8jzaT6T8/13gd9cc8v5P/sQ/Hni+Eutwz0Wv3o6KU04n/T2ZEftDpDfo8zpb4pgnFZQVZ6Ws5op6osibEFM5XLj9ApA2UYl4RjCElGBwMTdi3AiCz0yl6ISGsdpREGmRda+U39OBIwLDsRzQTA8YOoTACN0gshCRKBPkQ9RDaR7R6GdJpE/K3m8vjf9AZN3iWamdOjWEOBNws1KoXKDJM4yIWqOpa4E55ghQptTyZpXrXy0LppYe/Y6fWSYTsB4GpUrMvIe8E7XorVAHVVgPjXhBarre8IZhP7iG4eKJ4QULNJoAotJtZDola2h+JWtofiVra358V5eE4QD3gnql5QvzsS9CqnFGCcPbtzpVhVIhXbZ1Hf8pBlpdlqAU8lmVUfyMIgiAIgiAIgiCI/5d/OR4mDgKVeXIAAAAASUVORK5CYII="
+          />
+          <div class="user-info">
+            <p>OOO님 환영합니다.</p>
+            <p>로그아웃</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="content content-padded" style="padding-top: 10em">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="page"
+          data-start="#page01"
+          data-target="#page02"
+        >
+          페이지 호출
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#modal01"
+        >
+          모달 호출
+        </button>
+      </main>
+    </section>
+
+    <section class="page right" id="page02">
+      <div class="logo">
+        <p>
+          <span style="color: #0066ff; font-weight: 800; font-size: 1.7em"
+            >T</span
+          >rendy Go
+        </p>
+      </div>
+      <div class="login">
+        <div id="google-login"></div>
+      </div>
+    </section>
+
+    <section class="modal" id="modal01">
+      <header class="title">modal page</header>
+    </section>
+  </body>
+</html>
