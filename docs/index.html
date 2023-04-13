@@ -8,9 +8,16 @@
       name="google-signin-client_id"
       content="YOUR_CLIENT_ID.apps.googleusercontent.com"
     />
+    <link rel="manifest" href="./manifest.json" />
     <link
       rel="stylesheet"
       href="https://supsok.github.io/gbsw/touchstrap/css/touchstrap.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://supsok.github.io/gbsw/touchstrap/js/touchstrap.js"></script>
@@ -26,45 +33,70 @@
     <title>Trendy Go</title>
   </head>
   <body>
+    <!-- main page -->
     <section class="page center" id="page01">
       <header
         class="bar bar-nav bar-dark bg-faded bg-primary"
-        style="height: 10em; padding: 1em"
+        style="height: 10.7em; padding: 15px 10px"
       >
-        <div class="title" style="text-align: left; padding: 10px">
+        <div class="title" style="text-align: left; padding: 10px 40px">
           <h3>Trendy Go</h3>
-          <img
-            class="user-img"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAY1BMVEX///8AAADr6+tBQUG5ubnU1NQaGhro6Ojg4OCdnZ2YmJg8PDy8vLxvb2/5+fn8/PyLi4uSkpIzMzN7e3uvr6+np6ddXV3CwsLOzs4nJyciIiIJCQlnZ2cRERGBgYHz8/NPT0+6XZqLAAAD0UlEQVR4nO2aa5uyIBCG84hpqXlKrdT//yvfWgazVsWWEffda+6PSfAoMMyB3Y4gCIIgCIIgCIIgiD8NKw9ZnmeHkm2tRODFRXAxvrgERextrWe3M7PAeCPIzG012da7pAeWvaEkrxiT9KDYbBLP7pQmw3AP22jav6iog6B++WG/raZLciqZ2bYmK2OxD7dRlfeDH8vh7+Wxf5Dr1lT2BqCMXp9EZW8kyvH/roWZwLhN+/1hm8LDRK/BEsP6o0+jk5CsU5MHg8ZTDWJooNNcXWGJh1MNQmhx1afJ4fv+NrNk2I03cbSJihds+VwyweiAMRjZeE9aMAy6NDmLLDZYfF3zx4e7SXaWd9N62PCDJJE14/b1qEPRfbsXy0bjVqGYNBuoMGvZccv3n6XnqPH4vEhdXpvPsh6jDqLOsnbnDURJ/d2DTlEfrik98SnsPqlbkurcfb/STu24C+dK5oXxAOykR5PwzyWLCtwEbX66sWC1wMrT5iUID33WKHCDYKS6NIFZNIKZTxWCOyU1sWhEMDUzVqGBKY6mm2AjQtFsqoGIn7WGoxCsTJ3KNjzWGMzc8SoYdtSxFLmPSnOWSnwL4/rNhjLxGeXeDTYiMjfcmA1Wc8TiPpWmy5gPRhfphLusNIN58rL0md1rNO68XlVjPLm4lWVV7mXwk74w9IXX/OIb+w2+0xflaML6gaU5XzbEjMc1nbZN75tx8q4oiTeuONxhh5cUf2H/lqIRO/hNmjb+4RdUiwji7xO25iytptBYEHl5WnSdNUvXFWnuaVLW2um7DZ8jtde372bzrZAtI0jXleU1cg1jNCta+n0tH3+ceq3M9XRtfQnr1N/Pw89UBdcmt2fJm2tQDf5SrxDBD33fe6CwyNmN7oHE4G/oNWX/+ZH8jzaT6T8/13gd9cc8v5P/sQ/Hni+Eutwz0Wv3o6KU04n/T2ZEftDpDfo8zpb4pgnFZQVZ6Ws5op6osibEFM5XLj9ApA2UYl4RjCElGBwMTdi3AiCz0yl6ISGsdpREGmRda+U39OBIwLDsRzQTA8YOoTACN0gshCRKBPkQ9RDaR7R6GdJpE/K3m8vjf9AZN3iWamdOjWEOBNws1KoXKDJM4yIWqOpa4E55ghQptTyZpXrXy0LppYe/Y6fWSYTsB4GpUrMvIe8E7XorVAHVVgPjXhBarre8IZhP7iG4eKJ4QULNJoAotJtZDola2h+JWtofiVra358V5eE4QD3gnql5QvzsS9CqnFGCcPbtzpVhVIhXbZ1Hf8pBlpdlqAU8lmVUfyMIgiAIgiAIgiCI/5d/OR4mDgKVeXIAAAAASUVORK5CYII="
-          />
-          <div class="user-info">
-            <p>OOO님 환영합니다.</p>
-            <p>로그아웃</p>
+          <div class="header-card">
+            <img
+              class="user-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAY1BMVEX///8AAADr6+tBQUG5ubnU1NQaGhro6Ojg4OCdnZ2YmJg8PDy8vLxvb2/5+fn8/PyLi4uSkpIzMzN7e3uvr6+np6ddXV3CwsLOzs4nJyciIiIJCQlnZ2cRERGBgYHz8/NPT0+6XZqLAAAD0UlEQVR4nO2aa5uyIBCG84hpqXlKrdT//yvfWgazVsWWEffda+6PSfAoMMyB3Y4gCIIgCIIgCIIgiD8NKw9ZnmeHkm2tRODFRXAxvrgERextrWe3M7PAeCPIzG012da7pAeWvaEkrxiT9KDYbBLP7pQmw3AP22jav6iog6B++WG/raZLciqZ2bYmK2OxD7dRlfeDH8vh7+Wxf5Dr1lT2BqCMXp9EZW8kyvH/roWZwLhN+/1hm8LDRK/BEsP6o0+jk5CsU5MHg8ZTDWJooNNcXWGJh1MNQmhx1afJ4fv+NrNk2I03cbSJihds+VwyweiAMRjZeE9aMAy6NDmLLDZYfF3zx4e7SXaWd9N62PCDJJE14/b1qEPRfbsXy0bjVqGYNBuoMGvZccv3n6XnqPH4vEhdXpvPsh6jDqLOsnbnDURJ/d2DTlEfrik98SnsPqlbkurcfb/STu24C+dK5oXxAOykR5PwzyWLCtwEbX66sWC1wMrT5iUID33WKHCDYKS6NIFZNIKZTxWCOyU1sWhEMDUzVqGBKY6mm2AjQtFsqoGIn7WGoxCsTJ3KNjzWGMzc8SoYdtSxFLmPSnOWSnwL4/rNhjLxGeXeDTYiMjfcmA1Wc8TiPpWmy5gPRhfphLusNIN58rL0md1rNO68XlVjPLm4lWVV7mXwk74w9IXX/OIb+w2+0xflaML6gaU5XzbEjMc1nbZN75tx8q4oiTeuONxhh5cUf2H/lqIRO/hNmjb+4RdUiwji7xO25iytptBYEHl5WnSdNUvXFWnuaVLW2um7DZ8jtde372bzrZAtI0jXleU1cg1jNCta+n0tH3+ceq3M9XRtfQnr1N/Pw89UBdcmt2fJm2tQDf5SrxDBD33fe6CwyNmN7oHE4G/oNWX/+ZH8jzaT6T8/13gd9cc8v5P/sQ/Hni+Eutwz0Wv3o6KU04n/T2ZEftDpDfo8zpb4pgnFZQVZ6Ws5op6osibEFM5XLj9ApA2UYl4RjCElGBwMTdi3AiCz0yl6ISGsdpREGmRda+U39OBIwLDsRzQTA8YOoTACN0gshCRKBPkQ9RDaR7R6GdJpE/K3m8vjf9AZN3iWamdOjWEOBNws1KoXKDJM4yIWqOpa4E55ghQptTyZpXrXy0LppYe/Y6fWSYTsB4GpUrMvIe8E7XorVAHVVgPjXhBarre8IZhP7iG4eKJ4QULNJoAotJtZDola2h+JWtofiVra358V5eE4QD3gnql5QvzsS9CqnFGCcPbtzpVhVIhXbZ1Hf8pBlpdlqAU8lmVUfyMIgiAIgiAIgiCI/5d/OR4mDgKVeXIAAAAASUVORK5CYII="
+            />
+            <div class="user-info">
+              <p>최홍찬<span>님 환영합니다.</span></p>
+              <p>로그아웃</p>
+            </div>
           </div>
         </div>
       </header>
 
-      <main class="content content-padded" style="padding-top: 10em">
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-toggle="page"
-          data-start="#page01"
-          data-target="#page02"
-        >
-          페이지 호출
-        </button>
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-toggle="modal"
-          data-target="#modal01"
-        >
-          모달 호출
-        </button>
+      <main class="content content-padded" style="margin-top: 10.7em">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="data:image/png;base64,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"
+            width="100%"
+            alt="Card image cap"
+          />
+          <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="https://ssl.gstatic.com/trends_tpt/3174b37d16275969493858f5e960b61e4375b5741ec42b7449d36800f47a5e32.jpg"
+            width="100%"
+            alt="Card image cap"
+          />
+          <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
       </main>
     </section>
 
+    <!-- login page -->
     <section class="page right" id="page02">
       <div class="logo">
         <p>
