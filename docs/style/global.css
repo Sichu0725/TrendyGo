@@ -107,3 +107,10 @@ body {
   margin: 5px;
   overflow-y: scroll;
 }
+
+#iframe {
+  margin: 0;
+  margin-top: 1px;
+  width: 100%;
+  height: calc(100%);
+}
